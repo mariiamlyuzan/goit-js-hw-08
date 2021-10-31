@@ -8,10 +8,6 @@ const STORAGE_TIME = 'videoplayer-current-time';
         console.log('played the video!');
     });
 
-    player.getVideoTitle().then(function(title) {
-        console.log('title:', title);
-    });
-
 player.on('timeupdate', throttle(onUpdate, 1000)); 
  function onUpdate(e) {
     {
